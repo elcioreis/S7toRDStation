@@ -1,0 +1,34 @@
+{
+    "token": "MY_TOKEN",
+    "contact": {
+        "name": "nomedocontato",
+        "title": "titulodocontato"
+        "birthday": {
+            "day": 11,
+            "month": 9,
+            "year": 1979
+        }
+        "emails": [{
+            "email": "fulano@email.com.br"
+        }],
+        "phones": [{
+            "phone": "71304556"
+        }],
+        "organization_id": "ID_EMPRESA",
+        "deal_ids": [
+            "ID_OPORTUNIDADE1",
+            "ID_OPORTUNIDADE2"
+        ],
+        "legal_bases": [{
+                "category": "data_processing",
+                "type": "consent",
+                "status": "granted"
+            },
+            {
+                "category": "communications",
+                "type": "vital_interest",
+                "status": "granted"
+            }
+        ]
+    }
+}

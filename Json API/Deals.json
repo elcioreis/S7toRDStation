@@ -1,0 +1,82 @@
+{
+    "token": "MY_TOKEN",
+    "deal": {
+        "name": "nome da oportunidade",
+        "user_id": "ID_DO_RESPONSAVEL",
+        "rating": 1,
+        "deal_stage_id": "ID_DA_ETAPA_DO_FUNIL",
+        "deal_custom_fields": [{
+                "custom_field_id": "ID_DO_CAMPO_PERSONALIZADO",
+                "value": "VALOR_DO_CAMPO"
+            },
+            {
+                "custom_field_id": "ID_DO_CAMPO_PERSONALIZADO",
+                "value": "VALOR_DO_CAMPO"
+            }
+        ]
+    },
+    "deal_products": [{
+            "name": "Product 01",
+            "description": "Description Product 1",
+            "base_price": 199.91,
+            "price": 199.91,
+            "amount": 1,
+            "total": 199.91,
+            "discount_type": "value",
+            "recurrence": "spare"
+        },
+        {
+            "name": "Product 02",
+            "description": "Description Product 2",
+            "base_price": 199.92,
+            "price": 199.92,
+            "amount": 1,
+            "total": 199.92,
+            "discount_type": "value",
+            "recurrence": "spare"
+        }
+    ],
+    "contacts": [{
+        "name": "Alexandre",
+        "title": "Gerente",
+        "facebook": "https://...",
+        "linkedin": "http://...",
+        "skype": "alexandre@email.com",
+        "birthday": {
+            "day": 11,
+            "month": 9,
+            "year": 1979
+        },
+        "emails": [{
+                "email": "email1@empresa.com"
+            },
+            {
+                "email": "email2@empresa.com"
+            }
+        ],
+        "phones": [{
+            "phone": "3165585457",
+            "type": "cellphone"
+        }],
+        "legal_bases": [{
+                "category": "data_processing",
+                "type": "consent",
+                "status": "granted"
+            },
+            {
+                "category": "communications",
+                "type": "vital_interest",
+                "status": "granted"
+            }
+        ]
+    }],
+    "deal_source": {
+        "_id": "ID_DA_FONTE"
+    },
+    "campaign": {
+        "_id": "ID_DA_CAMPANHA"
+    },
+    "organization": {
+        "_id": "ID_DA_EMPRESA"
+    }
+}

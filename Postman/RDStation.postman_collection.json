@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "56c83782-a615-468f-914b-fc3e73c1eb5b",
+		"name": "RDStation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15533135"
+	},
+	"item": [
+		{
+			"name": "getTokenCheck",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n    \"token\": \"6286598469282f0029b2619b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://plugcrm.net/api/v1/token/check",
+					"protocol": "https",
+					"host": [
+						"plugcrm",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"token",
+						"check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postProdutos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n\t\"token\": \"6286598469282f0029b2619b\",  \r\n\t\"product\": { \r\n\t\t\"name\": \"TESTE02\",    \r\n\t\t\"description\": \"CORRENTE PLAST P\\/ CALHA 15MM BRANCA 3M\",    \r\n\t\t\"base_price\": \"0.00\"  \r\n\t\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://plugcrm.net/api/v1/products",
+					"protocol": "https",
+					"host": [
+						"plugcrm",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putProdutos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n\t\"token\": \"6286598469282f0029b2619b\",  \r\n\t\"product\": { \r\n\t\t\"name\": \"TESTE02\",    \r\n\t\t\"description\": \"CORRENTE PLAST P\\/ CALHA 15MM VERDE PRETO GUARDA-CHUVA 3M\",    \r\n\t\t\"base_price\": \"0.00\"  \r\n\t\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://plugcrm.net/api/v1/products/62fae59e8ab4fe00103c6b79",
+					"protocol": "https",
+					"host": [
+						"plugcrm",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"62fae59e8ab4fe00103c6b79"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getListarProdutos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://plugcrm.net/api/v1/products?token=6286598469282f0029b2619b",
+					"protocol": "https",
+					"host": [
+						"plugcrm",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "6286598469282f0029b2619b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getExibirProduto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://plugcrm.net/api/v1/products/62fae0da8959e50010ebfa79?token=6286598469282f0029b2619b",
+					"protocol": "https",
+					"host": [
+						"plugcrm",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"62fae0da8959e50010ebfa79"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "6286598469282f0029b2619b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postOrganizacoes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"6286598469282f0029b2619b\",\r\n    \"organization\": {\r\n        \"name\": \"Teste3\",\r\n        \"resume\": \"Teste3 de sistemas\",\r\n        \"url\": \"www.teste3.com.br\",\r\n        \"user_id\": \"eu03\",\r\n        \"organization_segments\": [\r\n            \"Segmento UM\",\r\n            \"Segmento DOIS\"\r\n        ],\r\n        \"organization_custom_fields\": []\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://plugcrm.net/api/v1/organizations",
+					"protocol": "https",
+					"host": [
+						"plugcrm",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"organizations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putOrganizacoes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"6286598469282f0029b2619b\",\r\n    \"organization\": {\r\n        \"name\": \"Teste4\",\r\n        \"resume\": \"Teste4 de sistemas\",\r\n        \"url\": \"www.teste4.com.br\",\r\n        \"user_id\": \"eu04\",\r\n        \"organization_segments\": [\r\n            \"Segmento UM (01)\",\r\n            \"Segmento DOIS (02)\"\r\n        ],\r\n        \"organization_custom_fields\": []\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://plugcrm.net/api/v1/organizations/62ffd9ab93efd60024acfd64",
+					"protocol": "https",
+					"host": [
+						"plugcrm",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"organizations",
+						"62ffd9ab93efd60024acfd64"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getListarOrganizacoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://plugcrm.net/api/v1/organizations?token=6286598469282f0029b2619b",
+					"protocol": "https",
+					"host": [
+						"plugcrm",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"organizations"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "6286598469282f0029b2619b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postContacts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"6286598469282f0029b2619b\",\r\n    \"contact\": {\r\n        \"name\": \"Antonio Fernandes\",\r\n        \"title\": \"Sr\",\r\n        \"birdthday\": {\r\n            \"day\": 11,\r\n            \"month\": 9,\r\n            \"year\": 1979\r\n        },\r\n        \"emails\": [\r\n            {\r\n                \"email\": \"antonio.fernandes@gmail.com\"\r\n            },\r\n            {\r\n                \"email\": \"fernandes@rd.com.br\"\r\n            }\r\n        ],\r\n        \"phones\": [\r\n            {\r\n                \"phone\": \"11 98765-4321\"\r\n            },\r\n            {\r\n                \"phone\": \"11 98765-4433\"\r\n            }\r\n        ],\r\n        \"organization_id\": \"62fcdce4b88542000c11cbb4\",\r\n        \"deal_ids\": [\r\n            \"Oportunidade01\",\r\n            \"Oportunidade02\"\r\n        ],\r\n        \"legal_bases\": [\r\n            {\r\n                \"category\": \"exemplo data_processing\",\r\n                \"_type\": \"consent\",\r\n                \"status\": \"granted\"\r\n            },\r\n            {\r\n                \"category\": \"exemplo communications\",\r\n                \"_type\": \"vital_interest\",\r\n                \"status\": \"granted\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://plugcrm.net/api/v1/contacts",
+					"protocol": "https",
+					"host": [
+						"plugcrm",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

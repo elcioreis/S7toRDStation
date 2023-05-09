@@ -1,0 +1,22 @@
+{
+    "token": "MY_TOKEN",
+    "organization": {
+        "name": "nome da empresa",
+        "resume": "resumo da empresa",
+        "url",
+        "user_id": "ID_DO_USUARIO",
+        "organization_segments": [
+            "NOME_DO_SEGMENTO1",
+            "NOME_DO_SEGMENTO2"
+        ],
+        "organization_custom_fields": [{
+                "custom_field_id": "ID_DO_CAMPO_PERSONALIZADO",
+                "value": "VALOR_DO_CAMPO"
+            },
+            {
+                "custom_field_id": "ID_DO_CAMPO_PERSONALIZADO",
+                "value": "VALOR_DO_CAMPO"
+            }
+        ]
+    }
+}

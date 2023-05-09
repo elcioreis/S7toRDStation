@@ -1,0 +1,8 @@
+{
+    "token": "MY_TOKEN",
+    "product": {
+        "name": "nome do produto",
+        "description": "descricao do produto",
+        "base_price": "10.00"
+    }
+}
